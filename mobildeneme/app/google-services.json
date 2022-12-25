@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "372677001628",
+    "project_id": "fitnessgok",
+    "storage_bucket": "fitnessgok.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372677001628:android:570b946191410c3d918859",
+        "android_client_info": {
+          "package_name": "com.example.gokfitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372677001628-2at15mb19p7c4g67t25nnqhjcbhav8m5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpnz6rhzqUQ83yFTSFCEocDwDSEYxhYpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372677001628-2at15mb19p7c4g67t25nnqhjcbhav8m5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

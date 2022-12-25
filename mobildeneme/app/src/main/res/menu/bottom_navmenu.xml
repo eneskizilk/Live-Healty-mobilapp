@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Fitness"
+        android:icon="@drawable/fitness"
+        android:id="@+id/fitness"/>
+    <item android:title="Check"
+        android:icon="@drawable/check"
+        android:id="@+id/check"/>
+    <item android:title="Food"
+        android:icon="@drawable/ic_baseline_fastfood_24"
+        android:id="@+id/food"/>
+    <item android:title="Personal"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/person"/>
+    <item android:title="Settings"
+        android:icon="@drawable/settings"
+        android:id="@+id/settings"/>
+</menu>
