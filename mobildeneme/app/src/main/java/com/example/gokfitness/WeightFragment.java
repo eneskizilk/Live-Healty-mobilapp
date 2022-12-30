@@ -73,7 +73,6 @@ public class WeightFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         
-
         breakfasttext=(TextView) view.findViewById(R.id.breakfasttext);
         breakfastcal=(TextView) view.findViewById(R.id.breakfastcal);
 
