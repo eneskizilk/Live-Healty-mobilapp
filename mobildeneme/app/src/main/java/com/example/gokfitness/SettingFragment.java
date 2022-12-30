@@ -88,10 +88,7 @@ public class SettingFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        /*
-         * Burda dene
-         *
-         *  */
+        
         super.onViewCreated(view, savedInstanceState);
         String[] sexsp = new String[]{              //breakfast
                 "Male", "Female"
