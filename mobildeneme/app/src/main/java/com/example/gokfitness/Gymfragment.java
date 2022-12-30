@@ -1,12 +1,18 @@
 package com.example.gokfitness;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
+import static android.content.Intent.getIntent;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +20,8 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class Gymfragment extends Fragment {
+     Button arm,chest, shoulder_back,leg,add_memory;
+    Bundle arguments = getArguments();
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -60,5 +68,56 @@ public class Gymfragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_gymfragment, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        arm=(Button) view.findViewById(R.id.armbutton);
+        chest=(Button) view.findViewById(R.id.chestbutton);
+        shoulder_back=(Button) view.findViewById(R.id.shoulderbackbutton);
+        leg=(Button) view.findViewById(R.id.legbutton);
+        add_memory=(Button)view.findViewById(R.id.addmemory);
+        arm.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent(getContext(),gridviewimage.class);
+        intent.putExtra("TYPE", "arm");
+        startActivity(intent);
+    }
+});
+        chest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(),gridviewimage.class);
+                intent.putExtra("TYPE", "chest");
+                startActivity(intent);
+            }
+        });
+shoulder_back.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent(getContext(),gridviewimage.class);
+        intent.putExtra("TYPE", "shoulder");
+        startActivity(intent);
+    }
+});
+leg.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent(getContext(),gridviewimage.class);
+        intent.putExtra("TYPE", "leg");
+        startActivity(intent);
+    }
+});
+add_memory.setOnClickListener(new View.OnClickListener() {             //Create empty activity for upload photo or something
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent(getContext(),uploadphoto.class);
+        startActivity(intent);
+    }
+});
+
     }
 }
