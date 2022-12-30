@@ -1,14 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Gymfragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/addmemory"
+            android:layout_width="333dp"
+            android:layout_height="50dp"
+            android:text="Add Memory"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/legbutton" />
+
+        <Button
+            android:id="@+id/legbutton"
+            android:layout_width="333dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30px"
+            android:text="Leg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shoulderbackbutton" />
+
+        <Button
+            android:id="@+id/shoulderbackbutton"
+            android:layout_width="333dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30px"
+            android:text="Shoulder and Back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chestbutton" />
+
+        <Button
+            android:id="@+id/chestbutton"
+            android:layout_width="333dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30px"
+            android:text="Chest"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/armbutton" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="345dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="32dp"
+            android:text=" SPORT MOVES"
+            android:textSize="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/armbutton"
+            android:layout_width="333dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="32dp"
+            android:text="Arm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

@@ -1,14 +1,162 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WeightFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
+        <Spinner
+            android:id="@+id/movesspin"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="272dp"
+            app:layout_constraintTop_toBottomOf="@+id/lunchfasttext"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/movestext"
+            android:layout_width="357dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="328dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/breakfastspin" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moves"
+            app:layout_constraintBottom_toTopOf="@+id/movestext"
+            app:layout_constraintTop_toBottomOf="@+id/dinnerspin"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="28dp" />
+
+        <Spinner
+            android:id="@+id/dinnerspin"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="132dp"
+            app:layout_constraintTop_toBottomOf="@+id/lunchfasttext"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/dinnerfasttext"
+            android:layout_width="357dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="180dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.296"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/breakfastspin" />
+
+        <TextView
+            android:id="@+id/lunchcal"
+            android:layout_width="123dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="24dp"
+            android:text="Cal:"
+            app:layout_constraintBottom_toTopOf="@+id/lunchfasttext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.988"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dinner"
+            app:layout_constraintBottom_toTopOf="@+id/dinnerfasttext"
+            app:layout_constraintTop_toBottomOf="@+id/lunchspin"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="28dp" />
+
+        <Spinner
+            android:id="@+id/lunchspin"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/lunchfasttext"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/lunchfasttext"
+            android:layout_width="357dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="56dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.296"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/breakfastspin" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Breakfast"
+            app:layout_constraintBottom_toTopOf="@+id/breakfasttext"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/breakfasttext"
+            android:layout_width="357dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="52dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.296"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/breakfastcal"
+            android:layout_width="123dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="24dp"
+            android:text="Cal:"
+            app:layout_constraintBottom_toTopOf="@+id/breakfasttext"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.988"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Spinner
+            android:id="@+id/breakfastspin"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/breakfasttext"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lunch"
+            app:layout_constraintBottom_toTopOf="@+id/lunchfasttext"
+            app:layout_constraintTop_toBottomOf="@+id/breakfastspin"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="27dp" />
+
+        <TextView
+            android:id="@+id/dinnercal"
+            android:layout_width="123dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="24dp"
+            android:text="Cal:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.983"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/lunchspin" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
